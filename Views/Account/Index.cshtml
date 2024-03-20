@@ -1,0 +1,19 @@
+﻿@model WIHTOUT_DOCK.Models.LoginViewModel;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+</head>
+<body>
+    <header>something in another page</header>
+    <!-- Your login form and other HTML content here -->
+    <form asp-controller="Account" asp-action="Login" method="post">
+        <!-- Your login form fields here -->
+        <input type="text" asp-for="Username" />
+        <input type="password" asp-for="Password" />
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
